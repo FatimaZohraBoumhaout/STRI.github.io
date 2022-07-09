@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+	<title> Glossary </title>
+	<link rel = "stylesheet" type="text/css" href="assets/css/glossary.css">
+
+
+</head>
+<body>
+
+
+<div class="header">
+  <div class="pull-left logo">
+          <a class="" href="index.html"><img src="assets/img/logo.png" /></a>
+       </div>  <div class="header-right">
+   	 <a href="index.html" class="smoothScroll" >Main page</a>
+     <a href="direction.html" class="smoothScroll">Direction</a>
+     <a href="corpus.html" class="smoothScroll">Chapters</a>
+
+  </div>
+</div>
+
+
+
+<div class="header_2">
+	<h1 style="font-size: 150%;   font-style: italic;">Syriac - English Dictionary</h1>
+</div>
+
+<div class="wrapper">
+	<div class="words">
+		<input type="text" id="search" placeholder="search..."> 
+	<button onclick="search()">Go</button>
+
+	<ul id="word_list"></ul>
+
+
+	</div>
+
+	<div class="word">
+		<h3 id="word_text"></h3>
+		<p id="definition"></p>
+
+		<hr>
+
+		<h3 id="h" style="margin-left: 5%"></h3>
+		<li id="related"></li>
+
+	</div>
+
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	
+	var dictionary = [ {word: " ܐܓܘ̈ܓܐ ",
+						def: "(n.) a. “aqueduct”: ChrPJ 87; Syn.W. LXIX,114,25. [Lex. 6].",
+						rel: [""]
+					},
+					{ 
+						word: "ܐܓܘܪ̈ܣܐ",
+						def: "(n.) a. “field, farm”: ChrPJ 38, 88; Thomas of Marga Gov. 388,20, 398,10; cf. Syn.W. XI,115,5 ܐܓܘܪ̈ܣܝܐ “farmers”; PognInscr. 55.5-6 ܐܓܘܪ̈ܣܝܐ ܚܕܝ̈ܒܝܐ  “farmers of Adiabene”. [Lex., 6-7].  ",
+						rel: [""]
+
+					},
+					{
+						word: "ܐܓܝܠ  ",
+						def: "(pr.n.) “Agilene.” Syriac ’Agēl: an Armenian satrapy; later Armenia III. a. ChrPJ 50 [cf. Trombley and Watt 2000, 53n.257].",
+						rel: [""]
+					},
+					{word: "ܐܘܚܕܢܐ",
+						def: "(n.) a. “authority, power, possessio; or, the physical and geographic manifestation of that power or authority, realm; province”: ChrPJ 10, 31, 46; Syn.W. XV,136,12; JulRom 101,27; PZR I,149,10 ܕܡܠܟܘܬܐ “of the empire”; JulRom 49,28 ܕܡܠܟܘܬܟ “of your [Julian’s] empire”; JulRom 132,4 ܕܡܠܟܘܬܢ “of our empire”; Eusebius EH 4.26.7 [Cureton 1855, 58], JulRom 18,23, 35,12, 75,20, 143,10 ܕܪܗܘ̈ܡܝܐ “of the Romans”; JulRom 75,19 ܕܒܝܙܘܣ “of Byzantium”; JulRom 18,23; PZR I,177,17, JnEph LES 10 (I,143) ܐܘܚܕܢܟ “your authority”. b. “diocese”: Life of Rabbula 41. [Lex., 13-14].",
+						rel: ["  "]
+					},
+					{ 
+						word: "ܐܘܪܗܝ",
+						def: "(pr.n.) a. “’Urhay, Edessa; rarely, Osrhoene”: ChrPJ incip., 5, 16, 30, 31, 44, 52, 54, 58, 59, 63, 70, 80, 81, 87, 89, 95, 96, 100; Life of Man of God 3.",
+						rel: [""]
+
+					},
+					{
+						word: "ܐܘܪܗܝܐ",
+						def: "(adj.) a. “Edessene, of ’Urhay”: ChrPJ 16, 31, 38, 43, 52, 54, 49, 70, 82, 96, 99, 100; cf. Life of Rabbula 72 ܒܝܬ ܐܘܪܗܝ̈ܐ “Edessa”, properly “Osrhoene.” ",
+						rel: [""]
+					},
+					{
+						word: " ܐܘܡܢܐ",
+						def: "(n.) a. “artisan, skilled worker, architect”: ChrPJ 29, 31, 66, 86; ChrEd. 2:10; JnEph LES 9 (I,136); JulRom 229,1. [Lex., 17].",
+						rel: [""]
+					},
+						{
+						word: "ܐܝܓܪܬܐ",
+						def: "(n.) a. “letter, writ, official correspondence or notice”: ChrPJ 34, 47, 49, 54, 67, 68, 99; Aphr. Dem. 3.4; JnEph LES 10 (I,143); BL Or. 8606, f.140v,b.5; JulRom 210,16; Syn.W. XV,134,10 ܕܡܓܥܠܢܘܬܐ “commendatory letters (ܣܘܣܛܛܝ̈ܩܐ, < Gr., ἐπιστολή συστατική)”; JulRom 230,5; JulRom 99,14-15 ܕܫܝ̈ܢܐ ܘܕܬܪܥܘ̈ܬܐ “letters of peace and reconciliation”; PZR I,208,27 ܣܘܢܗܕܝܩܘܣ “synodical [letter]”; Syn.W. XI,112,12 ܕܡܝܛܪܦܘܠܝܛܝܣ “of the metropolitan”; Rab Adm.Priests 47 ܦܠܣܘܢ “forged letters (< L. falsum, via Gr. φάλσον)”; Syn.W. XV,135,4 (cf. ACO 2.1.2, Actio 7.6.13); Ephrem CJ II.15. [Lex., 9].",
+						rel: [""]
+					},	
+					{
+						word: "ܐܝܙܓܕܐ",
+						def: "(n.) a. “ambassador, embassy”: ChrPJ 8, 15, 18, 19, 21, 23, 54, 63, 95, 97; IsaAnt Royal City 303,148; JulRom 207,1. [Lex., 32-33].",
+						rel: [""]
+					},
+						{
+						word: "ܐܝܙܓܕܘܬܐ",
+						def: "(n.) a. “embassy, mission”: ChrPJ 25, 80; JnEph LES 10 (I,143); JulRom 16,22; 2Macc 4:11 P; [Lex., 33].",
+						rel: ["  "]
+					},
+						{
+						word: " ܐܝܣܪܠܝܐ ",
+						def: "(adj.) a. “Israelite, of Israel”: ChrPJ 38.",
+						rel: [""]
+					},
+						{
+						word: "ܐܝܩܪܐ ",
+						def: "(n.) a. “honor, office, rank”: ChrPJ 12, 19, 27, 28, 49, 81, 83; Sent.Men. [AS I,69] ܢܦܠ ܡܢ ܐܝܩܪܗ “fell from his rank”; SRL 59.3,4; IsaAnt Royal City 303,160; Life of Rabbula 2; Life of Man of God 8; PZR I,156,18 and I,172,19; Syn.W. XV,131,11 (cf. ACO 2.1.2, Actio 7.6.4);  Syn.W. XV,134,25; PZR I,174,7 ܕܡܝܕܢܬ ܡܠܟܘܬܐ “of the imperial city”; Cyril de Recta Fide 1; JulRom 74,4 ܐܝܩܪܟܘܢ “your [the senators of Rome] honor.” b) “glory”: Life of Rabbula 19 ܕܐܠܗܐ “the glory of God.” [Lex., 38].",
+						rel: [""]
+					},
+						{
+						word: "ܐܟܣܢܝܐ",
+						def: "(adj.) a. “foreign, strange; a foreigner, stranger”: CPJ 22, 30, 34, 44, 77; Acts of Thomas 4; Syn.W. LVI,23,26; JnEph LES 10 (I,145); Syn.W. I,11,24; Thomas of Marga Gov. 313,4 and 364,10; Liber Graduum 3.7; Rab Adm. Monks 17; JnEph LES 5 (I,86) ܒܪ ܐܣܟܡܐ “[a stranger] of the habit (i.e., a foreign monk).” [Lex., 44-45].",
+						rel: [""]
+					},
+						{
+						word: " ܐܡܕ",
+						def: "(pr.n.) “Amida (Diyarbakır)”: ChrPJ incip., 50, 53, 54, 56, 58, 66, 69, 71, 75, 76, 79, 80, 81, 82, 93, 90, 92.",
+						rel: [""]
+					},
+						{
+						word: "ܐܡܕܝܐ",
+						def: "(adj.) a. “Amidene, of Amida (Diyarbakır)”: ChrPJ 50, 53, 99; ChrEd. 12:10.",
+						rel: [""]
+					},
+						{
+						word: "ܐܢܕܪܝܢܛܐ",
+						def:"(n., Gr. ἀνδριάντος) a. “statue, likeness”: ChrPJ 27; 2Chr 14:2 P. [Lex., 59].",
+						rel: [""]
+					},
+						{
+						word: "ܐܢܛܝܟܝܐ ",
+						def: "(n., Gr. ἀνδριάς, gen. sg. ἀνδριάντος). a) “statue:” ܕܛܘܒܢܐ ܩܘܣܛܢܛܝܢܘܣ ܡܠܟܐ “of the blessed emperor Constantine,” stood in the ܐܢܛܝܦܘܪܘܣ of Edessa (see below) ChrPJ 27; P 2Chr14:2; ܒܐܢܕܪܝܛܘܣ ܕܐܦܠܘܢ “on the statue of Apollo” JulRom 92:11. [Lex., 59].",
+						rel: [""]
+					},
+						{
+						word: "ܐܢܛܝܦܘܪܘܣ",
+						def: "(n., Gr. ἀντίφορος) a. “forum, town center”: hapax, ChrPJ 27 [cf. Procopius Aed. 2.7.6; see discussion in Mango 1982]. [Lex., 61].",
+						rel: [""]
+					},
+						{
+						word: "ܐܣܘܪܝܐ",
+						def: "(adj.) a. “Isaurian, of Isauria”: ChrPJ 12, 23.",
+						rel: [""]
+					},
+						{
+						word: "ܐܣܛܒܝܕ",
+						def: "(n., probably < Pah. spāhbed with corrupt phonology). a. “cavalry commander, the ‘magister militum of the Persians’”: ChrPJ 69, 80, 81, 95, 97, 98; PZR VIII,77, IX,95. [Lex., 67]. ",
+						rel: [""]
+					},
+						{
+						word: "ܐܣܛܘܐ",
+						def: "(n., Gr. στοά) a. “portico, stoa, storefront”: ChrPJ 27, 29, 31, 32, 40, 41, 42, 87; JulRom 228,21; SRL 1056b.2; Thomas of Marga Gov. 67,8 and 227,17; ChrEd. 8; 1Kg 6:3; John 5:2. [Lex., 68].",
+						rel: [""]
+					},
+						{
+						word: "ܐܣܛܪܛܝܠܛܣ",
+						def: "(n., Gr. στρατηλάτης) a. “military commander; sometimes comes, magister militum”: ChrPJ 9, 12, 14, 15, 56, 63; PZR I,166,15 (= Aspar); JnEph LES 13 (I,189) (= Justinian); ChrEd. 7.16. [Lex., 71].",
+						rel: [" "]
+					},
+						{
+						word: "ܐܣܟܝܡܐ",
+						def: "(n., Gr. σχῆμα) a. “dress, garb; character”: ChrPJ 50; JulRom 143,1 ܕܦܠܚܘܬܗ “military, martial [dress]”; Thomas of Marga Gov. 22,2, 378,14; JulRom 179,2 ܕܪܗܘܡܝ̈ܐ “[the dress] of the Romans (i.e., Roman military uniform)”; JulRom 101,4. [Lex., 74].",
+						rel: ["  "]
+
+					},{
+
+						word: " ܐܣܟܘܠܐ ",
+						def: "(n., Gr. σχολή) a. “school, as in the theological schools in Edessa”: Thomas of Marga Gov. 6,11, 13,15, 297,18. JnEph LES 10 (I,139) ܕܦܪܣܝ̈ܐ “[the school] of the Persians.” b. “a class, school lesson”: JnEph LES 5 (I,89). [Lex., 73].",
+						rel: [""]
+					},
+					{ 
+						word: "ܐܣܦܕܐ",
+						def: "(n., Gr. σπονδεῖον) a. “jar; unit of measure”: ChrPJ 93. [Lex., 75].",
+						rel: [""]
+
+					},
+					{
+						word: "ܐܦܝܣܩܦܐ",
+						def: "(n., Gr. ἐπισκοπός) a. “bishop”: ChrPJ 28, 30, 32, 34, 36, 39, 58, 74, 78, 83, 87, 88, 91, 100; JulRom 3,4, PZR I,176,26-27 ܕܪܗܘܡܐ “of Rome”; Thomas of Marga Gov. 1,4, 6,6; Life of Rabbula 47 ܡܥܪܒܝ̈ܐ ܘܬܝܡܢܝ̈ܐ “western and southern [bishops]”; PZR I,174,3-4 ܕܡܕܝܢܬ ܡܠܟܘܬܐ “of the imperial capital (i.e., the patriarch, here Anatolius).” [Lex., 86].",
+						rel: [""]
+					},
+					{word: "ܐܦܝܣܩܦܘܬܐ",
+						def: "(n.) a. “bishopric, the office of the bishop”: ChrPJ 42; Life of Rabbula 170.7; Eusebius EH 60.16. [Lex., 86-87].",
+						rel: ["  "]
+					},
+					{ 
+						word: "ܐܦܬܛܢ ",
+						def: "(n., Gr. ἀπόθετον) a. “public granary”: ChrPJ 40, 66, 81; [Lex., 90].",
+						rel: [""]
+
+					},
+					{
+						word: " ܐܪܟܣܛܐ ",
+						def: " (n., Gr. ὀρχηστής) a. “dancer, performer”: ChrPJ 27; Severus Hymns. 305,8. [Lex., 101].",
+						rel: [""]
+					},
+					{
+						word: "ܐܪܡܢܝ",
+						def: "(pr.n.) “Armenia”: ChrPJ 48, 50, 75. ",
+						rel: [""]
+					},
+						{
+						word: "ܐܪܡܢܝܐ",
+						def: "(adj.) a. “Armenian, of Armenia”: ChrPJ 20, 21, 24, 57, 75. [Lex., 103]. ",
+						rel: [""]
+					},	
+					{
+						word: "ܐܪܥܐ",
+						def: "(n.) a. “earth, soil”: JnEph LES 10 (I,140). b. “land, territory”: ChrPJ 11, 18, 22, 24, 27, 30, 33, 34, 36, 38, 45, 47, 57, 66, 79, 84, 85, 86; JnEph LES 6 (I,113); Aphr. Dem. 1.11; JulRom 102,16 ܕܟܠܕܝ̈ܐ “of the Chaldaeans (i.e., Persia)”; JnEph LES 4 (I,80), Thomas of Marga Gov. 23,2 ܕܡܕܢܚܐ “of the East”; JulRom 102,26 ܕܦܪܣ “of Persia”; Vita Marouta 3 and 4 = dprsy’; Thomas of Marga Gov. 23,14 ܕܦܪܣܝ̈ܐ ܘܕܐܬܘܪܝ̈ܐ ܘܕܒܒܠܝ̈ܐ “[the land] of the Persians, Assyrians, and Babylonians”; JnEph 4 (I,80) ܕܪܗܘܡܝ̈ܐ “of the Romans”; JulRom 172,24 ܢܟܪܝܬܐ “foreign.” c. “the earth, i.e., the globe”: JnEph LES 10 (I,141) ܟܠܗ “all of the globe.” [Lex., 104]. ",
+						rel: [""]
+					},
+						{
+						word: "ܐܪܫܡܫܛ",
+						def: "(pr.n.) “Arsamosata”: ChrPJ 35.",
+						rel: ["  "]
+					},
+						{
+						word: "ܐܬܘܪܝܐ",
+						def: "(adj.) “Assyrian, of Assyria”: ChrPJ 5; Thomas of Marga Gov. 74,2, 120,15, 139,14; cf. JulRom 67,13 ܐܬܘܪ “Assur (i.e., Assyria, Persia).”",
+						rel: [""]
+					},
+						{
+						word: "ܐܬܪܐ",
+						def: "(n.) a. “area, land, province”: ChrPJ 3, 4, 9, 10, 12, 13, 21, 22, 33, 36, 38, 45, 48, 49, 51, 53, 58, 59, 64, 75, 77, 80, 81, 83, 84, 86, 90, 91, 96, 99, 100; PZR I,161,20; JulRom 23,9, 98,17; PZR I,104,16-17 ܕܐܦܣܘܣ “of Ephesus”; PZR I,173,18-19 ܕܐܘܪܘܦܐ “of Europe”; JulRom 102,18 ܕܒܝܬ ܐܪܡܝ̈ܐ “of Aramaea (lit., the house of the Aramaeans)”; Ephrem CJ II.25 ܕܒܝܬ ܢܗܪܝ̈ܢ “of Mesopotamia”; JnEph LES 10 (I,142) ܕܒܝܬ ܦܪܣܝ̈ܐ “of the Persian Empire”; JnEph LES 1 (I,6) ܕܨܘܦܢܝ̈ܐ “of Sophanene”; JulRom 100,26 ܕܟܪܣܛܝ̈ܢܐ “of the Christians”; SRL 87a.4 ܕܡܥܪܒܐ ܘܕܡܕܢܚܐ “western and eastern [provinces, i.e., empire]”; JnEph LES 10 (I,139) and Vita Marouta 3 ܕܪܗܘܡܝ̈ܐ “of the Romans”; Syn.W. LIV,2,10 ܕܣܪܘܓ “of Serūg”; Bardaisan BLC 24.12 ܟܠܗ ܕܛܝܝ̈ܐ ܘܕܣܪܩܝ̈ܐ “the entire [land] of the Ṭayyāyē and the Saracens”; Syn.W. XII,118,8; PZR I,173,17 ܥܠܝ̈ܐ “upper [provinces]” (cf. Gr., τοῖς ἄνω τόποις); JnEph LES 2 (I,27); JulRom 86,22 ܕܐܘܚܕܢܢ “of our power, realm”; JulRom 68,8 ܕܡܠܟܘܬܢ “of our empire”; JnEph LES 10 (I,138) ܕܪܗܘܡܐ “of Rome”; Doctrine of Addai 39,200,15 ܕܪܘܡܝ̈ܐ “of the Romans”; JulRom 23,13 and 62,28 ܟܘܠܗܘܢ ܕܐܘܚܕܢܢ “of our entire realm”; Bardaisan BLC 19.7 ܕܡܠܟܘܬܐ ܕܦܪܣܝ̈ܐ “of the Persian empire”; Life of Man of God 8; JulRom 98,17 ܕܬܚܝܬ ܫܘܠܛܢܗ “[the provinces] under his jurisdiction.” [Lex., 112-113].",
+						rel: [""]
+					},
+						{
+						word: "ܒܘܩܠܛܢ",
+						def: "(n., L. buccellatum, via Gr. βουκελλάτον) a. “soldiers’ bread, hardtack”: ChrPJ 54. [Lex, 129-130].",
+						rel: [""]
+					},
+						{
+						word: "ܒܛܢܢ",
+						def: "(pr. n.) a. “Baṭnan” i.e., Batnae/Serūg; see below ܩܣܛܪܐ.",
+						rel: [""]
+					},
+						{
+						word: "ܒܝܬ ܐܠܘܣ",
+						def: "(n.) a. “the house of Iulus (i.e., the partisans of Iulus)”: ChrPJ 16, 17, 18.",
+						rel: [""]
+					},
+						{
+						word: "ܒܝܬ ܓܙ̈ܐ",
+						def:"(n.) a. “imperial treasury”: ChrPJ 18; Syn.W. LXXXVIII,192,15; Ps.Melito 43.17 ܕܡܠܟ̈ܐ ܐܚ̈ܪܢܐ “of other [foreign] kings”; BL Or. 8606, f.141r,a.20-21 ܕܝܠܗ ܕܥܕܬܐ “of his church”; cf. Lk 21:1 P (for γαζοφυλάκιον); [Lex., 146]. ",
+						rel: [""]
+					},
+						{
+						word: "ܒܝܬ ܗܘܢܝ̈ܐ",
+						def: "(n.) a. “the land of the Huns”: ChrPJ 23.",
+						rel: [""]
+					},
+						{
+						word: "ܒܝܬ ܚܪܢܝ̈ܐ",
+						def: "(n.) a. “the land of the Ḥarrānians, the district of Ḥarrān”: ChrPJ 51, 52.",
+						rel: [""]
+					},
+						{
+						word: "ܒܝܬ ܠܢܛܝܣ",
+						def: "(n.) a. “the house of Leontius (i.e., the partisans of Leontius)”: ChrPJ 16.",
+						rel: [""]
+					},
+						{
+						word: "ܒܝܬ ܡܝ̈ܐ",
+						def: "(n.) a. “latrine, bathroom (lit., “house of waters”)”: ChrPJ 30. [Lex., 148]. ",
+						rel: [""]
+					},
+						{
+						word: "  ܒܝܬ ܡܠܟܘܬܐ7",
+						def: "(n.) a. “capital (lit., “house of the empire, kingdom”)”: ChrPJ 16; PZR I,143,25-26; PZR I,158,8; PZR I,210,17; Vita Marouta 4. b. “empire”: JulRom 59,14, 102,28; JulRom 207,24 (i.e., Rome and Persia).",
+						rel: [""]
+					},
+						{
+						word: "ܒܝܬ ܣܗ̈ܕܐ ",
+						def: "(n.) a. “martyrion, shrine of the martyrs”: ChrPJ 29, 31, 35, 60, 87; Life of Man of God 4; Life of Rabbula 6 ܕܩܘܙܡܐ ܘܕܡܝܢܐ “[the martyrion of the victorious martyrs] Cosmas and Damian.” [Lex., 149].",
+						rel: [" "]
+					},
+						{
+						word: " ܒܝܬ ܦܪܣܝ̈ܐ ",
+						def: "(n.) a. “Persia; the land of the Persians; the Persian Empire”: ChrPJ 15, 18, 75, 79, 88; JnEph LES 10 (I,138).",
+						rel: ["  "]
+					},{word: "  ܒܝܬ ܪܗܘܡܝ̈ܐ",
+						def: "(n.) a. “Roman empire; the land of the Romans; Rome; Romanland (i.e., Romanía)”: ChrPJ 8, 9, 17, 23, 34, 50, 57, 88; ChrEd 40 (6.1-2); PognInscr. 84.23-24; Thomas of Marga Gov. 6,6 and 69,7 and 71,19; JulRom 209,19; Bardaisan BLC 19.9 ܘܒܝܬ ܝܘܢܝ̈ܐ “Greece (lit., “the land of the Greeks,” or “the Roman empire” )”; cf. Bardaisan BLC 21.16-17 ܘܒܝܬ ܐܘܪܗܝ̈ܐ ܘܒܝܬ ܥܪܒܝ̈ܐ “of the district of Edessa and Arbayistan (i.e., Bēṯ ‘Arbāyē).”",
+						rel: [""]
+					},
+					{ 
+						word: "ܒܝܬ ܫܒܬܐ",
+						def: "(n.) a. “synagogue”: ChrPJ 47; Thomas of Marga Gov. 60,7. b. “refectory”: Thomas of Marga Gov. 235,9. [Lex., 150].",
+						rel: [""]
+
+					},
+					{
+						word: "ܒܠܡܘ̈",
+						def: "(pr.n., Gr. Βλέμμυες) a. “the Blemmyes”: ChrPJ 20.",
+						rel: [""]
+					},
+					{word: "ܒܠܢܐ",
+						def: "(n., Gr. βαλανεῖον) a. “bath, bathhouse”: ChrPJ 43; Syn.W. VI,83,27; Syn.W. LX,54,55; Syn.W. XLIX,251,29; Syn.W. LVI,23,4; Didasc. XIV,12; Life of Rabbula 20. [Lex., 158].",
+						rel: ["  "]
+					},
+					{ 
+						word: "ܒܠܢܣ",
+						def: "(n., Gr. βαλανεῖον) a. “bath, bathhouse”: ChrPJ 19, 75; cf. ܒܠܢܐ above.",
+						rel: [""]
+
+					},
+					{
+						word: "ܒܠܣ̈ܛܣ ",
+						def: "(n., Gr. βαλλιστής) a. “ballista”: ChrPJ 75; 1Macc 6:51 P; [Lex., 158].  ",
+						rel: [""]
+					},
+					{
+						word: " ܒܢܝ̈ ܐܬܪܐ",
+						def: "(n.) a. “locals, provincials, inhabitants of a district or precinct”: ChrPJ 22, 77, 86, 91. [Lex., 179].",
+						rel: [""]
+					},
+						{
+						word: "ܒܢܝ̈ ܚܐܪ̈ܐ",
+						def: "(n.) a. “members of the nobility”: ChrPJ 43; JnEph LES 12 (I,172) ܒܢܬ ܚܐܪ̈ܐ ܪܘ̈ܪܒܬܐ ܕܡܕܝܢܬܐ “the great noblewomen of the city”; SRL 23.3; JnEph LES 13 (1,197); Mt 17:26 PC; Thomas of Marga Gov. 139,12; Bardaisan BLC 30-31; Sent.Menander [AS I,69]. b. “a free-born individual”: Syn.W. VI,84,17 ܒܪܬ ܚܐܪ̈ܐ “a free-born woman.” [Lex., 180]. ",
+						rel: [""]
+					},	
+					{
+						word: "ܒܢܝ̈ ܡܕܝܢܬܐ",
+						def: "(n.) a. “citizens, cf. Latin cives”: ChrPJ 26, 27, 30, 39, 42, 44, 62, 77, 100, 101; PZR I,123,2-3; PZR I,180,21; Life of Rabbula 35; Liber Graduum 7.2 ܕܡܕܝܢܬܗ “the citizens of his city (i.e., his fellow citizens)”; Ps.Melito 43.29 ܒܪ ܡܕܝܢܬܗܘܢ “[Hercules was] a citizen of their city.” [Lex., 182].",
+						rel: [""]
+					},
+						{
+						word: "ܒܢܝ̈ ܢܩܘܡܕܝܐ",
+						def: "(n.) a. “citizens of Nicomedia”: ChrPJ 47.",
+						rel: ["  "]
+					},
+						{
+						word: "  ܒܢܝ̈ ܥܕܬܐ",
+						def: "(n.) a. “clerics, members of the clergy, lit. ecclesiastics”: ChrPJ 67. [Lex., 183].",
+						rel: [""]
+					},
+						{
+						word: " ܒܢܝ̈ ܥܡܐ ",
+						def: "(n.) a. “a people group, nation; members of a nation”: ChrPJ 46.",
+						rel: [""]
+					},
+						{
+						word: " ܒܢܝ̈ ܦܠܛܝܢ ",
+						def: "(n.) a. “courtiers, members of the palace”: ChrPJ 12; cf. JulRom 229:1ܒܦܠܛܝܢ ܕܒܝܬ ܐܒܓܪ‏ “in the palace of the house of Abgar.” [Lex., 183].",
+						rel: [""]
+					},
+						{
+						word: "ܒܢܝ̈ ܩܘܪܝ̈ܐ",
+						def: "(n.) a. “villagers”: ChrPJ 52; Vita Marouta 3 ܒܢܝ̈ ܩܪܝܬܐ “villagers.” [Lex., 184].",
+						rel: [""]
+					},
+						{
+						word: "ܒܢܝ̈ ܩܠܪܘܣ",
+						def: "(n.) a. “the clergy, members of the clerical class”: ChrPJ 83; Life of Rabbula 19. [Lex., 184].",
+						rel: [""]
+					},
+						{
+						word: "ܒܣܠܝܩܘ̈ܣ",
+						def:"(n., Gr. Βασιλική) a. “porticoes, colonnades”: ChrPJ 12, 30, 43; Syn.W. LXXXIV,169,25 ܒܣܠܝܩܐ “the palace [of Sizine]”; ChrEd. 9.14. [Lex., 164-165].",
+						rel: [""]
+					},
+						{
+						word: " ܒܪܒܪܝܐ ",
+						def: "(adj., Gr. βάρβαρος) a. “barbarian”: ChrPJ 20; Ephrem Church 89.16; Syn.W. LXXXVIII,191,8; Col 3:11 P. [Lex., 186]. ",
+						rel: [""]
+					},
+						{
+						word: " ܓܘܬܝܐ ",
+						def: "(adj., via Gr. Γότθος) a. “a Goth, a member of the Goths”: ChrPJ 71, 93, 94, 95.",
+						rel: [""]
+					},
+						{
+						word: " ܓܙܐ ܕܡܠܟܐ ",
+						def: "(n.) a. “imperial treasury, lit. treasures of the king / emperor”: ChrPJ 10. [Lex., 223].",
+						rel: [""]
+					},
+						{
+						word: " ܓܠܘܣܩܡܐ",
+						def: "(n.) a. “box, case, coffin”: ChrPJ 80; JulRom 194:21; ChrEd. 5:24; Jn 12:6 P. [Lex., 234]. ",
+						rel: [""]
+					},
+						{
+						word: " ܓܠܝܠܝܐ ",
+						def: "(adj.) a. “Galilean”: ChrPJ 72; Lk 13:2 OS. ",
+						rel: [""]
+					},
+						{
+						word: "ܓܢܣܐ",
+						def: "(n., Gr. γένος) a. “species, race”: ChrPJ 12; Ephrem CJ II.10 ܒܢܝ̈ ܓܢܣܗ “members of his race”; Melkite Chronicle 13; JnEph LES 4 (I,56); Life of Man of God 2; Syn.W. II,28,10; Thomas of Marga Gov. 9,3, 14,5; Rabbula Suppl. 7.7 ܕܐܢ̈ܫܐ “[the race] of humanity”; Ms DS 3, f.26 ܕܒܢܝ̈ܢܫܐ “of mankind”; Rabbula Suppl. 1.9 ܕܡܝܘ̈ܬܐ “of mortals”; JulRom 79,11-12. b. “family, tribe”: Syn.W. LXXXVIII,191,10 ܪܘ̈ܪܒܐ ܘܛܒܝ̈ܒܐ “great and famous tribes.” c. “kind”: JnEph LES 6 (I,112) ܟܠ ܓܢܣ “of every kind.” [Lex., 249].",
+						rel: [" "]
+					},
+						{
+						word: "ܓܪ̈ܡܝܢܐ ",
+						def: "(adj.) a. “German, a member of the Germanic tribes”: ChrPJ 20. ",
+						rel: ["  "]
+					},{word: " ܕܘܟܣ ",
+						def: "(n., L. dux via Gr. δούξ) a. “dux, leader, commander”: ChrPJ 51, 57, 64, 69, 75, 80, 88, 92, 93, 94, 97; PZR I,225,17. [Lex., 281]. ",
+						rel: [""]
+					},
+					{ 
+						word: "ܕܝܡܣܝܢ",
+						def: " (n.) a. “the public thing, a public bath house”: ChrPJ 29, 30, 43, 75, 87; Sent.Syr. 16; Syn.W. II,29,7; cf. PZR I,218,18 ܕܝܡܣ “the people.” [cf. Lex., 311].",
+						rel: [""]
+
+					},
+					{
+						word: "ܕܚܠܬ ܐܠܗܐ",
+						def: "(n.) a. “religion, lit., the fear of God”: ChrPJ 21; JnEph LES 12 (I,171); JulRom 157,24 ܕܐܝܬ ܒܐܘܚܕܢܐ ܕܡܠܟܘܬܢ “the religions that are in our empire”; JulRom 232,23-24 ܕܫܘܠܛܢܢ “of our empire / jurisdiction”; Rabbula Hymns Mos. Brev. 2.1.3 ܕܬܐܘܠܘܓܝܐ “theological religion.” [Lex., 291].",
+						rel: [""]
+					},
+					{word: "ܕܝܿܢܐ  ",
+						def: "(n.) a. “judge, often for the provincial governor”: ChrPJ 4, 39, 40, 43, 80; SRL 3.1; JnEph LES 2 (I,19) ܕܡܕܝܢܬܐ “of the city”; Life of Rabbula 36; JulRom 98,22-23 ܕܐܬܪܘ̈ܬܐ “[the judges] of the provinces (i.e., the provincial governors)”; SRL 6c.1; Sharbil 100; JnEph LES 16 (I,247); JulRom 87,7 ܕܝ̈ܢܘܗܝ ܕܐܬܪܐ “his provincial judges (i.e. his governors).” [Lex., 297].",
+						rel: ["  "]
+					},
+					{ 
+						word: "ܕܝܢܪܐ",
+						def: "(n., L. denarius via Gr. δηνάριον) a. “a denarius, a coin”: ChrPJ 12; Mk 12:15 P. [Lex., 297].",
+						rel: [""]
+
+					},
+					{
+						word: "ܕܪܐ",
+						def: "(pr.n.) “Dara”: ChrPJ 54, 90, 97.",
+						rel: [""]
+					},
+					{
+						word: "ܕܪܓܐ",
+						def: "(n.) a. “position, rank, level”: ChrPJ 12, 42; Syn.W. XV,130,12. [Lex., 320].",
+						rel: [""]
+					},
+						{
+						word: "ܗܓܡܘܢܐ ",
+						def: "(n., Gr. ἡγεμών) a. “governor, prefect, leader”: ChrPJ 29, 32, 42, 43, 87, 89, 100; As10.i.2 ܐܝܓܡܘܢܐ (= John the Governor); cf. Narsai Memr. 1,274,15 ܗܓܡܢܘܬܐ “governorship, office of the governor, prefecture”; Eusebius EH 27.1. [Lex., 330].",
+						rel: [""]
+					},	
+					{
+						word: "ܗܘܢܝܐ ",
+						def: "(adj.) a. “Hun, a member of the Huns”: ChrPJ 9, 18, 19, 23, 24, 48, 51, 55, 57, 59, 62. ",
+						rel: [""]
+					},
+						{
+						word: "ܗܘܦܪܟܐ",
+						def: "(n., Gr. ἔπαρχος) a. “prefect”: ChrPJ 9, 54, 70, 77, 93; Sent.Syr. 1; PZR I,218,18 (= Boethius); PZR I,225,17; PZR I,220,9-10 ܕܡܕܝܢܬܐ (= Theoctistus); cf. Barhadbshabba EH I.108.8; Eusebius EH 357.14 ܗܘܦܪܟܘܬܐ “office of the prefect, prefecture.” [Lex., 338].",
+						rel: ["  "]
+					},
+						{
+						word: "  ܗܦܪܟܝܐ",
+						def: "(n., Gr. ἐπαρχία) a. “office of the prefect, prefecture; province”: ChrPJ 91; PZR I,162,1; Syn.W. XV,134,18; Thomas of Marga Gov. 9,9, 74,1, 155,10; Syn.W. XII,115,21; Syn.W. XIII,125,10 ܗܘܦܪܟܝ̈ܣ “prefectures, provinces”; Syn.W. VII,86,15. [Lex., 338].",
+						rel: [""]
+					},
+						{
+						word: "ܗܝܟܠܐ  ",
+						def: "(n.) a. “church, sanctuary”: ChrPJ 87; ChrEd. 8 ܕܥܕܬܐ ܕܟܪܣܛܝ̈ܢܐ “[the sanctuary] of the church of the Christians”; Life of Rabbula 38 ܕܥܕܬܐ ܕܡܕܝܢܬܗ “[the sanctuary] of the church of his city”; PZR I,182,15 ܪܒܐ “the great [church]” (here a church dedicated to the Anastasis by Eustathius). [Lex., 340-341].",
+						rel: [""]
+					},
+						{
+						word: "  ܗܝܟܠܝܐ",
+						def: "(adj.) a. “ecclesiastics, members of the church”: ChrPJ 53. [Lex., 341].",
+						rel: [""]
+					},
+						{
+						word: "ܗܡܝܪܐ ",
+						def: "(n., Gr. ὅμηρος) a. “hostage”: ChrPJ 10, 61, 79, 80, 97; IšoˁMerv CommOT.Dan. 101,13 ܐܝܟ ܕܒܗܡܝܪ̈ܐ; 1Mac1:10 P ܒܪܗܘܡܐ. [Lex., 345].",
+						rel: [""]
+					},
+						{
+						word: "ܗܪܣܝܣ",
+						def: "(n., Gr. αἵρεσις) a. “heresy”: ChrPJ 20; Bardaisan BLC 28.14; cf. JnEph LES 10 (I,140) ܗܪܣܝܘܬܐ “heresy”; Tit 3:10 ܓܒܪܐ ܗܪܣܝܘܛܐ “a heretical man.” [Lex., 335]. ",
+						rel: [""]
+					},
+						{
+						word: "ܙܪܕܫܬܩ̈ܢܐ",
+						def:"(n.) a. “Zoroastrian, follower of Zardušt”: ChrPJ 20. [Lex., 397].",
+						rel: [""]
+					},
+						{
+						word: "ܚܐܪܐ",
+						def: "(n.) a. “the free-born, the nobility”: ChrPJ 22; ChrEd. 8; JnEph LES 12 (1,174) (I,179) ܘܚܐܪ̈ܬܐ ܕܡܕܝܢܬܐ “[noble men] and women of the city”; JulRom 207,21 ܘܪܘ̈ܪܒܢܐ ܕܡܠܟܘܬܐ “[the nobles] and magnates of the empire”; JulRom 102,3-4 ܘܪܘ̈ܪܒܢܘܗܝ “[the nobles] and his magnates”; JulRom 165,13; JulRom 208,26-27; ܘܪܘ̈ܪܒܢܝܗܿ ܕܡܠܟܘܬܝ “[the nobles] and the magnates of my empire”; JulRom 208,12-13 ܘܪܘ̈ܪܒܢܝܗܿ ܕܦܪܣ “[the nobles] and magnates of Persia (lit., Fars)”; JulRom 40,1 ܚܝ̈ܪܐ ܘܡܝ̈ܩܪܐ “the nobles and the honorati.” [Lex., 402].",
+						rel: [""]
+					},
+						{
+						word: "ܚܐܪܘܬܐ",
+						def: "(n.) a. “freedom, nobility”: Sent.Syr. 16; Bardaisan BLC 5.26; Life of Man of God 2. b. “free will” ChrPJ 5. [Lex., 403].",
+						rel: [""]
+					},
+						{
+						word: " ܚܠܒܝܐ ",
+						def: "(adj.) a. “Aleppine, of Aleppo”: ChrPJ 55, 70.",
+						rel: [""]
+					},
+						{
+						word: " ܛܒܥܐ ܕܐܒܪܐ",
+						def: "(n.) a. “lead seal”: ChrPJ 42.  ",
+						rel: [""]
+					},
+						{
+						word: " ܛܘܗܡܐ ",
+						def: "(n.) a. “clan, lineage; ethnicity”: ChrPJ 14, 66, 72; IsaAnt 1,198,441 (of birds); Syn.W. LXII,68,21; Rabbula Suppl. 4.24. [Lex., 515].",
+						rel: [""]
+					},
+						{
+						word: " ܛܝܡܐ ",
+						def: "(n., Gr.  τιμή) a. “price, value, honor”: ChrPJ 38, 39, 40; Syn.W. VIII,87,31; Sent.Syr. 83; Mt 27:6. [Lex., 527].",
+						rel: [" "]
+					},
+						{
+						word: " ܛܝܝܐ ",
+						def: "(adj.) a. “Ṭayy, Arab”: ChrPJ 22, 24, 51, 55, 57, 58, 59, 60, 62, 63, 74, 75, 79, 88; JnEph LES 10 (I,140) ܕܒܝܬ ܢܥܡܢ “[the Tayyaye] of the house of Nu‘man.”",
+						rel: ["  "]
+					},{word: "ܛܡܘܪܝܐ  ",
+						def: "(adj.) a. “the Ṭamurāyē”: ChrPJ 22.",
+						rel: [""]
+					},
+					{ 
+						word: "ܛܪܝܒܘܢܐ",
+						def: " (n., L. tribunus via Gr. τριβούνος) a. “tribune, military commander”: ChrPJ 71; Severus Ep.Sel. V.1; PZR I,148,5 (= John). [Lex., 552]. ",
+						rel: [""]
+
+					},
+					{
+						word: "ܛܪܡܣܝܢ",
+						def: "(n., Gr. τριμίσσιον) a. “one-third of a solidus”: ChrPJ 84, perhaps a hapax legomenon [cf. Trombley and Watt 2000, 102n.477].",
+						rel: [""]
+					},
+					{word: " ܛܪܝܡܪܝܢ ",
+						def: "(n., possibly Gr. τριήμερον) a. “a three-day period”: ChrPJ 27, a hapax legomenon. ",
+						rel: ["  "]
+					},
+					{ 
+						word: "ܝܗܘܕܝܐ",
+						def: "(adj.) a. “Jewish, Jew; properly, of Judah, a Judaean”: ChrPJ 40, 47, 58, 68.",
+						rel: [""]
+
+					},
+					{
+						word: " ܝܘܢܝܐ ",
+						def: " (adj.) a. “Greek”: ChrPJ 46, 68; Syn.W. LII,261,7; Thomas of Marga Gov. 46,16, 330,5, 335,1; cf. Ms DS 10, f.118r ܝܘܢܐܝܬ “in Greek”; PZR I,143,24; cf. also Thomas of Marga Gov. 334,21 ܝܘܢ “Greece.” [Lex., 569].",
+						rel: [""]
+					},
+					{
+						word: " ܟܘܪܐ ",
+						def: "(n., Gr. χώρα) a. “land, district, countryside”: ChrPJ 43, 46, 68, 77, 85; SRL 19.2; PZR I,161,5; JnEph LES 5 (I,109) ܗܕܐ ܕܡܕܝܢܬܐ ܐܡܕ “this district of the city of Amida”; Syn.W. XI,108,29 ܟܘܪܘܣ; Syn.W. XII,124,22 ܟܘܪܘ̈ܣ “districts.” [Lex., 612].",
+						rel: [""]
+					},
+						{
+						word: " ܟܘܪܐܦܝܣܩܦܐ ",
+						def: "(n., Gr. χωρεπίσκοπος) a. “chorepiscopus, a country bishop, the bishop of a rural district”: ChrPJ 83; Syn.W. XI,108,29; SRL 114.3; Syn.W. VII,88,29. [Lex., 612-613].",
+						rel: [""]
+					},	
+					{
+						word: " ܟܝܘܢܝܐ ",
+						def: "(adj.) a. “Chionite”: ChrPJ 9.",
+						rel: [""]
+					},
+						{
+						word: " ܟܠܘܢܢ ",
+						def: "(n., Gr. χελώνη, translating L. testudo) a. “lit. tortoise, a Roman infantry formation with interlocking shields”: ChrPJ 51 ܕܗܼܝ ܓܐܠܐ “which means tortoise”, here possibly a hapax legomenon. [Lex., 624].",
+						rel: ["  "]
+					},
+						{
+						word: " ܟܣܢܕܘܟܝܢ ",
+						def: "(n., Gr. ξενοδοχεῖον). a. “lodge, inn, guesthouse; tavern”: ChrPJ 42, 43; Life of Rabbula 29; Life of Rabbula 50 ܕܢ̈ܫܐ “the women’s guest house.” [Lex., 640].",
+						rel: [""]
+					},
+						{
+						word: " ܟܣܢܕܟܪܐ ",
+						def: "(n., Gr. ξενοδόχαριος) a. “innkeeper”: ChrPJ 42; cf. Life of Man of God 7 ܟܣܢܕܘܟܐ.  [Lex., 640].",
+						rel: [""]
+					},
+						{
+						word: " ܟܣܦ ܪܝܫܐ ",
+						def: "(n.) a. “tax, tribute, lit. head tax”: ChrPJ 11; SRL 55.17; Mt 22:17 P.",
+						rel: [""]
+					},
+						{
+						word: " ܟܪܟܐ",
+						def: "(n.) a. “city, walled town”: ChrPJ 5; Ephrem CJ III.1; JulRom 144,8 (for Edessa); Rabbula Hymns Mos. Brev. 7.2.3; IsaAnt Royal City 303,156 ܪܒܐ (for Constantinople); Life of Man of God 8 ܪܚܩܝ̈ܐ “distant [cities].” [Lex., 654].",
+						rel: [""]
+					},
+						{
+						word: " ܟܪܛܝܣܐ ",
+						def: "(n., Gr. χάρτης) a. “sheet of paper, document; deed”: ChrPJ 96; PZR I,150,19; Syn.W. XL,212,29; SRL 89b.1; PZR I,182,8 ܕܟܠܩܝܕܘܢܐ “of Chalcedon.” [Lex., 650].",
+						rel: [""]
+					},
+						{
+						word: "ܠܓܝܘܢܐ",
+						def:"(n., L. legio via Gr. λεγιών) a. “legion, regiment”: ChrPJ 62; Mk 5:9 PS. [Lex., 673]. ",
+						rel: [""]
+					},
+						{
+						word: " ܠܝܛܪܝ̈ܢ ",
+						def: "(n., Gr. λἰτρα) a. “a Roman pound; coin”: ChrPJ 87; 1Ch 22:14 P.",
+						rel: [""]
+					},
+						{
+						word: "ܡܓܘܫܐ  ",
+						def: "(n., OPer. maguš via ImpAm. mgwš) a. “magus, Magian, Mazdean priest”: ChrPJ 19, 21; Is 19:3; Mt 2:1 P. [Lex., 707]. ",
+						rel: [""]
+					},
+						{
+						word: " ܡܓܘܫܘܬܐ ",
+						def: "(n.) a. “the Magian priesthood; the office of the magus”: ChrPJ 22; JulRom 189:3. [Lex., 707].",
+						rel: [""]
+					},
+						{
+						word: " ܡܓܣܛܪܘܣ",
+						def: " (n., L. magister via Gr. μάγιστρος) a. “administrator; magistrate; typically for the magister officiorum or magister militum”: ChrPJ 44, 67, 75, 81, 87, 95, 100; Severus Ep.Sel. I.21; PZR I,209,25 and JnEph LES 2 (I,28) ܡܓܝܣܛܪܘܣ (for the magister officiorum); PZR I,210,3 ܡܓܝܣܛܪܣ; cf. JnEph LES 13 (I,207) ܡܓܣܛܪܝ̈ܢܐ “staff members of the magister officiorum.” [Lex., 708]. ",
+						rel: [""]
+					},
+						{
+						word: "ܡܕܐܬܐ  ",
+						def: "(n., Akk. maddattu) a. “tax, tribute”: ChrPJ 8, 9; Gen 49:15; 1Kg 12:18; 1Macc 8:4; JulRom 192,8. [Lex., 711]. ",
+						rel: [""]
+					},
+						{
+						word: "ܡܕܒܪܢܐ",
+						def: "(n.) a. “governor, leader, ruler”: ChrPJ 15, 46, 48, 54, 56, 57, 58, 60, 72, 79, 80, 90, 97; Doctrine of Addai 29,204,1; JnEph LES 10 (I,139) (= Hiba of Edessa); JulRom 14,6; Bardaisan BLC 31; Vita Marouta 3 (for leaders of a monastery); Thomas of Marga Gov. 139,10; Doctrine of Addai 29,207,16-17 ܘܦܩܘ̈ܕܐ “[rulers] and commanders”; JulRom 79,21; JulRom 121,4 ܕܐܘܪܗܝ “of Edessa”; JulRom 84,19 ܕܪܗܘܡܐ “of Rome.” [Lex., 712].",
+						rel: [" "]
+					},
+						{
+						word: "ܡܕܒܪܢܘܬܐ",
+						def: "(n.) a. “government; rule”: ChrPJ 3, 20; Syn.W. LXXXIV,169,12 (cf. Socrates EH 4.29); JulRom 70,1; JulRom 103,10 (of Julian); JulRom 74,19-20ܕܟܘܠܗܝ̈ܢ ܡܠܟܘ̈ܬܐ ܕܐܪܥܐ “[the rule] of all the kingdoms / empires on earth (a hyperbole)”; JulRom 21,11 ܕܡܠܟ̈ܐ “of the emperors”; PZR I,175,6; JulRom 240,18 (of Jovian); JulRom 73,8 ܕܡܕܝܢܬܐ “of the city (i.e., municipal government)”; JulRom 15,15; JulRom 121,4 ܕܐܪܘܗܝ “of Edessa”; JulRom 84,19 ܕܪܗܘܡܐ “of Rome.” b. “economy; providence, esp. divine”: JnEph LES 10 (I,147) ܐܠܗܝܬܐ “divine [dispensation]”; JulRom 70,25; Life of Rabbula 3 ܕܐܠܗܐ “divine providence”; Rabbula Homily in Cple 3 ܕܡܪܢ “of our Lord”; c. “canons”: Syn.W. LVII,31,8 ܥܕܬܢܝ̈ܬܐ “ecclesiastical [canons].” [Lex., 712].",
+						rel: ["  "]
+					},{word: " ܡܕܝ̈ܢ ",
+						def: "(n., L. modius) a. “a unit of dry measure; a modius (= one peck)”: ChrPJ 26, 38, 39, 44, 80, 87; Mt 5:15 C [Lex., 721-722]. ",
+						rel: [""]
+					},
+					{ 
+						word: "ܡܕܝܢܬܐ",
+						def: " (n.) a. “city, town; rarely, metropolis”: ChrPJ passim; JulRom 146,19 ܡܕܝ̈ܢܬܐ ܕܐܚܕܢܢ “the cities of our realm / empire”; JulRom 166,22 ܕܒܝܬ ܡܠܟܘܬܗ “of his [Shapur’s] empire”; ChrEd. 9.9 ܕܒܝܬ ܢܗܪܘ̈ܬܐ “[the city] of Mesopotamia (for Amida)”; JulRom 137,21 ܕܡܕܢܚܐ “of the east”; Syn.W. LIV,6,10 ܕܣܘܪܝܐ “of Syria”; JulRom 122,25 ܡܗܝܡܢܬܐ “believing city (i.e., Edessa)”; Syn.W. XI,113,17 ܢܘܟܪܝܬܐ “foreign [city]”; JulRom 237,5 ܣܩܘܪܝ̈ܐ ܕܐܘܚܕܢܟ “[the cities] and villages of your [Julian’s] dominion”; JnEph LES 10 (I,142) ܝܕܝ̈ܥܬܐ “prominent cities (of the bishops of the Church of the East). [Lex., 713-714].",
+						rel: [""]
+
+					},
+					{
+						word: "ܡܕܝܢܬ ܡܠܟܘܬܐ",
+						def: "(n.) a. “capital city, imperial capital”: ChrPJ 13, 39; JnEph LES 10 (I,138) (for Constantinople); JnEph LES 2 (I,21); PZR I,150,3; Syn.W. LXXXIV,171,5; Syn.W. XV,133,17 (cf. ACO 2.1.2, Actio 7,6,9; Syn.W. XV,138,18; JulRom 62,18-19; JnEph LES 10 (I,142) ܕܪܗܘܡܝ̈ܐ “of the Romans.”",
+						rel: [""]
+					},
+					{word: "ܡܕܢܚܐ",
+						def: "(n.) a. “the East”: ChrPJ 16, 37, 54; Syn.W. XIII,126,3; Vita Marouta 4; PZR I,213,14. b. “the eastern Roman empire”: JulRom 149,19 ܡܕܢܚܐ ܘܡܥܪܒܐ “East and West.” [Lex., 716].",
+						rel: ["  "]
+					},
+					{ 
+						word: "ܡܗܝܡܢܐ",
+						def: "(adj.) a. “faithful; believing (i.e., Christian)”: ChrPJ 3, 4, 5, 8, 20. (n.) a. “confidant, advisor, official; eunuch”: PZR I,158,10 (= John the Cubicularius); JulRom 37,5; JulRom 73,15 ܡܗܝ̈ܡܢܐ ܘܫܪܝ̈ܪܐ “officials and dignitaries”; JulRom 241,4 (= Apolloris); JulRom 59,12; JulRom 153,1 (= Pamphilius); JulRom 21,24 ܕܡܠܟܘܬܝ “of my [Julian’s] empire”; JulRom 12,3 ܡܗܝܡܢܘ̈ܗܼܝ ܕܛܪܘܢܐ “his advisors of the throne”; ChrPJ 84, 87 (=Urbicius, the eunuch). [Lex., 719-720].",
+						rel: [""]
+
+					},
+					{
+						word: "ܡܘܗܒܬܐ ",
+						def: " (n.) a. “grant, gift, donative”: ChrPJ 63, 83, 100; Gn. 24:53 P; Acts 25:11 P; cf. P.Euphrates 18.ix. [Lex., 722]. ",
+						rel: [""]
+					},
+					{
+						word: "ܡܚܘܙܐ",
+						def: "(n.) a. “city, town”: ChrPJ 75; Thomas of Marga Gov. 61,4, 63,9, 69,12; Thomas of Marga Gov. 84,1 ܡܚܘ̈ܙܐ “the cities (i.e., Seleucia Ctesiphon).” [Lex., 737]. ",
+						rel: [""]
+					},
+						{
+						word: "  ܡܝܩܪܐ",
+						def: "(adj.) a. “honored, titled; honorable”: ChrPJ 54; P.Euphrates 18.4r “honored with consular rank (Aelius Septimius Abgar); Barsamya 121; Life of Rabbula 46; cf. Ps.Melito 43.12 ܡܝܩܪܝ̈ܢ “they honor [the images of the Caesars].” [Lex., 754]. ",
+						rel: [""]
+					},	
+					{
+						word: "ܡܠܟܐ",
+						def: "(n.) a. “king, emperor, sovereign”: ChrPJ ??; P.Euphrates 18.3r (= Aelius Septimius Abgar); JnEph LES 10 (I,142) (= Anastasius); JnEph LES 2 (I,26) (= Justinian); Ps.Melito 48.26; Ephrem CJ I.incip., I.7 (= Julian); Cyril de Recta Fide 2; JnEph LES 2 (I,35) ܡܠܟ̈ܐ (= Justinian and Theodora); Life of Rabbula 47 ܡܠܟ̈ܐ (for the imperial household); JulRom 122,21 ܕܠܥܠܡ “forever emperor” (= Julian, cf. Gr. ἀεί σεβαστός); JulRom 14,12; JulRom 209,9; JulRom 5,16 ܡܠܟ̈ܐ ܚܢ̈ܦܐ “pagan emperors”; JulRom 5,19 ܟܪܝܣܛܝ̈ܢܐ “Christian emperors”; Cyril de Recta Fide 4; PZR I,103,8; PZR I,211,20 ܡܗܝܡܢ̈ܐ “Christian emperors”; JulRom 102,23-24 ܡܗܝܡܢ̈ܐ ܘܪܚܡ ܠܡܫܝܚܐ “Christian and Christ-loving emperor (cf. Gr. φιλόχριστος)”; Life of Rabbula 46; PZR I,177,16; PognInscr. 76.2-3,25, 92.6, 94.4 ܡܠܟܐ ܙܟܝܐ “victorious king”; PZR I,227,10 ܡܠܟܐ ܡܗܝܡܢܐ ܙܟܝܐ “the Christian victorious emperor”; PZR I,206,15 ܡܠܟܐ ܐܘܛܩܪܛܘܪ “emperor autokrator (= Leo)”; JulRom 22,8 ܒܫܘܠܛܢܐ “[the emperor] in power; reigning emperor”; JulRom 53,4 ܡܠܟܐ ܘܐܚܝܕ ܫܘܠܛܢܐ = “emperor and holder of imperium”; JulRom 209,19 ܡܠܟ̈ܐ ܬܪ̈ܘܢܐ “tyrannical emperors”; JulRom 217,20; Eusebius EH 4.24 [Cureton 1855, 57] ܡܠܟܐ ܕܪܗܘܡܝ̈ܐ “Roman emperor”; JulRom 222,28 ܡܠܟ ܦܪܣ “the emperor of Persia (= Shapur II)”; JulRom 105,23 (= Shapur II); Syn.W. LXXXVIII,190,5 ܡܠܟ ܡܠܟܐ ܕܦܪܣܝ̈ܐ “the king of kings of the Persians, i.e. the Šâhanšâh (= Ardashir III)”; Je32:1 P ܡܠܟܐ ܕܝܗܘܕܐ “the king of Juda (= Zedekiah)”; PZR I,145,7-8 ܡܠܟܐ ܕܐܒܝܪܘ “the king of Iberia”; Je32:1 P ܡܠܟܐ ܕܒܒܠ “the king of Babel (= Nebuchadnezzar)”; JnEph LES 5 (I,88) ܡܠܟܐ ܡܫܝܚܐ “Christ the king”; JulRom 123,19-20 ܡܠܟܗܿ ܕܐܘܪܗܝ ܡܫܝܚܐ ܗܘ “Christ is the king of Edessa”; Rabbula Hymns. Mos. Brev. 2.5.1 ܡܠܟܢ “[Christ] our king”; JnEph LES 2 (I,28); Severus Ep.Sel. I.63 ܡܠܟܬܐ “empress (= Theodora)”; As1.6 ܡܠܟܬܐ “queen (= Shalmat, daughter of Ma‘nu)”; Cyril de Recta Fide 4 ܡ̈ܠܟܬܐ ܕܐܝܬܝܗܝ̈ܢ ܫܪܝܪܐܝܬ ܕܚ̈ܠܬܐ ܕܐܠܗܐ “empresses who truly are religious (lit. have the fear of God)”; JulRom 71,24 ܡܠܟܝ̈ܗܿ ܕܦܪܣ “the emperors of Persia”; JulRom 100,2 ܡܠܟܝ̈ܗܿ ܕܪܗܘܡܢܝܐ “the emperors of Romanía.” [Lex., 772].",
+						rel: [""]
+					},
+						{
+						word: " ܡܠܟܘܬܐ ",
+						def: "(n.) a. “kingdom, empire (lit., reign)”: ChrPJ 8, 10, 11, 12, 13, 15, 16, 19, 22, 23, 24, 39, 46, 58, 79, 100; ChrEd. 8; Liber Graduum 3.2, 3.10; SRL 9; Melkite Chronicle 4; PZR I,173,18, I,186,24; Vita Marouta 3; JulRom 196,27; MsDS 6, f.86v ܕܝܘܢܝ̈ܐ “of the Greeks”; JulRom 86,23 ܡܠܟܘ̈ܬܐ ܕܐܪܥܐ “the empires of the earth”; MT 4:8 S ܕܥܠܡ “of the world”; Ms DS 6, f.86r ܕܒܒܠܝ̈ܐ “kingdom of the Babylonians”; Aphrahat Dem. 2.9 ܕܒܝܬ ܐܦܪܝܡ “kingdom of the house of Ephraim”; Ms DS 6, f.86v ܕܡܕܝ̈ܐ “the kingdom of the Medes”; Ms DS 6, f.86v; Syn.W. LXXXVIII,191,20 ܕܦܪܣܝ̈ܐ “the kingdom of the Persians”; JulRom 172,4, 79,20 ܕܪܗܘܡܝ̈ܐ “the empire of the Romans”; Melkite Chronicle 7 ܕܪܗܘܡܝ̈ܐ ܟܠܗܿ “the entire empire of the Romans”; JulRom 103,14 ܕܪܗܘܡܝ̈ܐ ܡܢ ܠܥܠ “the empire of the Romans [granted to Julian] from above”; JulRom 154,27 ܘܡܕܒܪܢܘܬܐ ܕܪܗܘܡܝ̈ܐ “[the empire] and the government of the Romans”; JulRom 8,28 ܡܠܟܘܬܢ “our [the Romans] empire”; PZR I,226,6 ܡܗܝܡܢܬܐ “the believing empire [of Zeno]”; PZR I,146,3 ܕܡܪܩܝܢܘܣ “of Marcian”; PZR I,103,25 ܕܬܐܕܣܝܣ “of Theodosius”; JulRom 94,6 ܕܐܠܗܐ “of God”; JnEph LES 12 (I,174); Thomas of Marga Gov. 20,10 ܕܫܡܝ̈ܐ “of heaven”; Rabbula Suppl. 7.4 ܫܡܝܢܝܬܐ “heavenly.” [Lex., 772-773].",
+						rel: ["  "]
+					},
+						{
+						word: " ܡܪܝ ",
+						def: "(n.possessive) a. “master, lord”: ChrPJ 28, 29, 31, 36, 39, 42, 43, 59, 60, 62, 78, 83, 92, 93, 95; JulRom 18,21 ܡܪܟ “your lord”; JulRom 86,17; JulRom 135,19; JulRom 207,8 ܡܪܝ ܡܠܟܐ “my lord, the emperor”; cf. Mt 13:27 PC. [Lex., 823-824].",
+						rel: [""]
+					},
+						{
+						word: "  ܡܪܙܒܢܐ",
+						def: "(n., Ir. loanword) a. “prefect, governor (typically, of the Persians)”: ChrPJ 21, 51, 56, 59, 64, 66, 75, 77; Analecta Syriaca 3,206,28; [Lex., 830].",
+						rel: [""]
+					},
+						{
+						word: "ܡܪܝ̈ ܩܘܪܝ̈ܐ",
+						def: "(n.) a. “landed elites; landowners, lit. masters of the villages”: ChrPJ 39, 92; ChrPJ 93 “curiales (cf. Trombley and Watt 2000, 111n.519);” Rabbula Adm. Priests 34.",
+						rel: [""]
+					},
+						{
+						word: " ܢܡܘܣܐ",
+						def: "(n.) a. “law, custom”: ChrPJ 1, 16, 19, 21, 23, 97; Life of Man of God 3; Sharbil 116; Bardaisan BLC 16.7; PZR I,188,6 ܢܡܘܣ ܡܪܢ “the law of our Lord”; Bardaisan BLC 30.3-4 ܩܕܡܝܗܘܢ “ancient [laws]”; Aphrahat Dem. 3.4 ܩܕܝܫܐ “holy [law]”; Doctrine of Addai XXXIX,200,13 ܕܥܕܬܐ “of the church”; Syn.W. XV,134,15-16 ܥܕܬܢܝ̈ܐ “ecclesiastical laws”; Syn.W. LIV,2,24-25 ܥܕܬܢܝ̈ܐ ܘܩܢܘ̈ܢܐ “ecclesiastical laws and canons”; JulRom 34,26 ܢܡܘܣܝ̈ܗܿ ܕܟܐܢܘܬܐ “laws of justice”; Syn.W. LXII,64,10 ܕܛܝܝ̈ܐ “of the Ṭayyāyē”; cf. JulRom 99,1 ܢܡܘܣܐܝܬ “legally”; cf. also Syn.W. VI,84,17 ܢܡܘܣܐܝܬ ܙܕܓ “to marry legally.” [Lex., 921-922]. ",
+						rel: [""]
+					},
+						{
+						word: " ܢܨܒܝܢ ",
+						def: "(pr.n.) “Nisibis”: ChrPJ 7, 18, 20, 22, 24, 54, 55, 69, 75, 88, 90, 97.",
+						rel: [""]
+					},
+						{
+						word: "ܣܘܢܛܠܝܐ",
+						def:"(n., Gr. συντέλεια) a. “poll-tax, tax; the synteleia, capitatio”: ChrPJ 39, 66, 78, 92, 99; [Lex., 983].",
+						rel: [""]
+					},
+						{
+						word: " ܣܘܥܪܢܐ ",
+						def: "(n.) a. “matter, case, acts, business (cf. L. res, Gr. πράγματα)”: ChrPJ 6, 68; Syn.W. XV,133,6, 8 (cf. ACO 2.1.2, Actio 7.6.9); Syn.W. XV,130,24 ܥܠܡܢܝ̈ܐ “secular [matters]”; JnEph LES 1 (I,8) ܕܫܘܒܩܢܐ “of debt remission”; Rabbula Adm. Priests 38 ܣܘܥܪܢ̈ܐ ܕܥܕܬܗܼ “matters of his [Rabbula’s] church”; Syn.W. XV,133,12 ܕܕܝܢܵܐ “matters of jurisprudence (i.e., legal cases)”; Rabbula Adm. Priests 38 ܕܩܪܝܬܗܼ “of his village.” [Lex., 986-987].",
+						rel: [""]
+					},
+						{
+						word: " ܣܘܪܝܐ ",
+						def: "(pr.n.) a. “Syria (decidedly not Assyria in ChrPJ)”: ChrPJ 9, 19, 90; cf. Rabbula Hom. Cple 5 ܣܘܪܝܐܝܬ “in Syriac”; cf. also Ps.Melito 44.26 ܣܘܪܝܝ̈ܐ “Syrians” or “the Suryāyā people.”",
+						rel: [""]
+					},
+						{
+						word: " ܣܝܛܩܐ ",
+						def: "(n., Gr. σιτικόν) a. “public granary”: ChrPJ 29. [Lex., 1000].",
+						rel: [""]
+					},
+						{
+						word: " ܣܝܦܐ",
+						def: " (n., possibly via Gr. ξῐ́φος) a. “sword, the sword of office”: ChrPJ 13, 40, 72, 88, 94; Gen 27:3. [Lex., 1006]. ",
+						rel: [""]
+					},
+						{
+						word: "ܥܒܕܐ",
+						def: "(n.) a. “enslaved person”: ChrPJ 80; cf. Bardaisan BLC 52.25 ܥܒܕܘܬܐ “servitude, slavery.” [Lex., 1060].",
+						rel: [""]
+					},
+						{
+						word: "ܥܕܬܐ",
+						def: "(n.) a. “church”: ChrPJ 3, 31, 34, 36, 42, 43, 62, 63, 67, 83, 89; Melkite Chronicle 5 (the episcopal see); Life of Man of God 4; Syn.W. LXXIV,159,8 ܒܥܕܬܐ “in the church” (cf. Socrates EH 6.18.6 “ἐπὶ τῆς ἐκκλησίας); Doctrine of Addai 39,206,1-2 ܕܐܬܪܘ̈ܬܐ “of the provinces (i.e., the metropolitan see)”; ChrEd 12 (4.3-4) ܕܐܘܪܗܝ “of Edessa”; PZR I,185,23-24 ܕܡܕܝܢܬ ܡܠܟܘܬܐ “of the imperial capital”; ChrEd 59 (7.9-10); PZR I,210,9 (for Hagia Irene); Syn.W. XV,132,10 ܕܩܪܝܬܐ (cf. ACO 2.1.2, Actio 7.6.6); PZR I,220,8 ܪܒܬܐ “the great church, i.e., the cathedral church (= the Caesarion in Alexandria)”; JulRom 21,27 ܪܒܬܐ ܕܪܗܘܡܐ “the great church of Rome.” b. “the institution of the church”: Ephrem CJ I.15 = the institution of the church. [Lex., 1074]. ",
+						rel: [" "]
+					},
+						{
+						word: "ܥܝܕܐ",
+						def: "(n.) a. “custom, habit; tradition”: ChrPJ 19, 23, 27, 32, 34, 59; Syn.W. LII,261,6 ܕܕܘܟܬܐ “local [customs]” (cf. CJ 1.3.27 “consuetudine vel lege debebat”); JnEph LES 16 (I,237) ܟܪܝܣܛܝ̈ܢܐ “of the Christians.” [Lex., 1095]. ",
+						rel: ["  "]
+					},{word: " ܥܪܒ ",
+						def: "(pr.n.) “the ‘Arab, a region to the east of Amida and Tella”: ChrPJ 38; [cf. Trombley and Watt 2000, 37n.180].",
+						rel: [""]
+					},
+					{ 
+						word: "ܦܘܩܕܢܐ",
+						def: " (n.) a. “command, order; writ”: ChrPJ 31; Bardaisan BLC 5.19; Life of Rabbula 19, 50 ܦܘܩܕܢܗ “his [Rabbula’s] order”; Syn.W. XV,133,9 ܦܘܩܕܢܗ ܕܐܦܝܣܩܘܦܐ “the order of the bishop”; Life of Rabbula ܦܘܩܕܢܗ ܕܡܪܢ “the order of our lord”; Syn.W. VI,78,20 ܦܘܩܕܢܗ ܕܡܪܢ ܝܫܘܥ ܡܫܝܚܐ “the order of our lord Jesus Christ”; ChrEd. 4.27 ܕܡܠܟܐ “the order of the king, i.e. an imperial command”; Syn.W. XV,134,16-17 ܕܡܠܟܘܬܐ “imperial order” (= that which is called ܦܪܓܡܛܝܩܘܣ ܛܝܦܘܣ < Gr. πραγματικὸς τύπος); JulRom 73,4 ܕܡܠܟܘܬܝ “of my reign (i.e., my imperial order)”; Vita Marouta 4 ܡܠܟܝܐ “an imperial order, a royal order (of Khusrow)”. b. “summons, a call”: JnEph LES 12 (I,178) “a court summons.” c. “will, testament”: Syn.W. LXIII,80,26. [Lex., 1168]. ",
+						rel: [""]
+
+					},
+					{
+						word: "ܦܘܬܩܐ",
+						def: "(n., Gr. πανδοκεῖον) a. “tavern, inn”: ChrPJ 43, 86; SRL 123.1; Lk 10:34. [Lex.,  1177]. ",
+						rel: [""]
+					},
+					{word: " ܦܛܪܝܪܟܐ ",
+						def: "(n., Gr. πατριάρχης) a. “patriarch”: ChrPJ 83; JnEph LES 2 (I,26) (= Agapetus). [Lex., 1184]. ",
+						rel: ["  "]
+					},
+					{ 
+						word: " ܦܠܛܝܢ ",
+						def: "(n., ultimately L. palatium) a. “palace”: ChrPJ 13; JulRom 229,1-2 ܕܒܝܬ ܐܒܓܪ “the palace of the house of Abgar.” [Lex., 1199]. ",
+						rel: [""]
+
+					},
+					{
+						word: " ܦܠܣ ",
+						def: "(n., L. follis via Gr. φόλλις) a. “coin; a follis”: ChrPJ 39. [Lex., 1202]. ",
+						rel: [""]
+					},
+					{
+						word: "ܦܩܝܠܐ ",
+						def: "(n., Gr. φακιάλιον) a. “turban, cap, head covering”: ChrPJ 30 (translating “Wobblecap,” Gr. σαλοφακιολος); PZR I,182,23; PsZR I,167,21 (nickname of Timothy, anti-Chalcedonian patriarch of Alexandria); AMS VII,19,371; HistMarYab 137,2107. [Lex., 1222-23].",
+						rel: [""]
+					},
+						{
+						word: " ܦܪܘܛܪܝܢ ",
+						def: "(n., L. praetorium via Gr. Πραιτώριον) a. “praitorion, the offices of the praetor; the gubernatorial palace”: ChrPJ 29, 87; cf. JnEph EH III.309.28 ܦܪܛܘܪܝܐ; JnEph LES 11 (I,159).",
+						rel: [""]
+					},	
+					{
+						word: " ܦܪܝܘܕܘܛܐ ",
+						def: "(n., Gr. περιοδευτής) a. “chorepiscopus; travelling priest”: ChrPJ 54; cf. SRL 107.1 ܥܒܕ ܦܪܝܗܕܘܣܐ (for Gr. περιοδεῦσαι). [Lex., 1238].",
+						rel: [""]
+					},
+						{
+						word: " ܦܪܡܘܢܪܐ ",
+						def: "(n., Gr. παραμονάριος) a. “a paramonarius, warden of a church; church steward”: ChrPJ 87; Euphemia ??; Life of Man of God 6. [Lex., 1242].",
+						rel: ["  "]
+					},
+						{
+						word: " ܦܪܣ  ",
+						def: "(pr.n.) a. “Fars; Persia”: ChrPJ 7; Thomas of Marga Gov. 82,9, 86,9, 95,13; Ephrem CJ II.9. ",
+						rel: [""]
+					},
+						{
+						word: " ܦܪܣܝ̈ܐ ",
+						def: "(adj.) a. “Persian, of Persia”: ChrPJ passim; Thomas of Marga Gov. 23,14, 70,2, 82,1.",
+						rel: [""]
+					},
+						{
+						word: " ܦܪܬ ",
+						def: "(pr.n.) “Euphrates”: ChrPJ 16, 34, 54, 57, 60, 63, 64, 65, 87, 91; P.Euphrates 19.7r..",
+						rel: [""]
+					},
+						{
+						word: " ܨܘܦ",
+						def: "(pr.n.) “Sophene; Armenian Tsopk‘”: ChrPJ 50.  ",
+						rel: [""]
+					},
+						{
+						word: "  ܨܘܪܝܐ",
+						def: "(adj.) “Tyrian, of Tyre”: ChrPJ 47.",
+						rel: [""]
+					},
+						{
+						word: "ܨܝܕܢܝܐ",
+						def:"(adj.) “Sidonian, of Sidon”: ChrPJ 47.",
+						rel: [""]
+					},
+						{
+						word: " ܩܒܐ ",
+						def: "(n.) a. “a ‘qaba’; unit of dry measure”: ChrPJ 39, 41, 43. [Lex., 1308].",
+						rel: [""]
+					},
+						{
+						word: " ܩܒܘܬܐ ",
+						def: "(n., Gr. κιβωτός) a. “box, chest”: ChrPJ 29; Thomas of Marga Gov. 306,13, 392,13. b. “the ark of the covenant”: Gn 6:14 P.",
+						rel: [""]
+					},
+						{
+						word: "  ܩܘܢܓܝܢ",
+						def: "(n., Gr. κυνήγιον) a. “beast hunt (cf. L. venatio); chase; game-preserves”: ChrPJ 34; Syn.W. VI,84,25. [Lex., 1337]. ",
+						rel: [""]
+					},
+						{
+						word: " ܩܘܪܝܐ",
+						def: "(n.) a. “villages (pl. of ܩܪܝܬܐ‏)”: ChrPJ 34, 38, 39, 48, 52, 77, 79, 85; Life of Rabbula 50; Rabbula Adm. Monks 21; Syn.W. XI,108,29; Syn.W. XII,124,22; Thomas of Marga Gov. 110,5.  ",
+
+						rel: [""]
+					},
+						{
+						word: "ܩܘܪܝܝ̈ܐ",
+						def: "(adj.) a. “rustic, of the village; villager”: ChrPJ 40, 45, 62, 63, 85; Rabbula Hom. Cple. 5. [Lex., 1344]. ",
+						rel: [""]
+					},
+						{
+						word: " ܩܘܪܝ̈ܣ ",
+						def: "(n.) a. “villages, countrysides (pl. ܩܪܝܬܐ)”: ChrPJ 38; JnEph LES 4 (I,77); Life of Rabbula 10; Syn.W. XV,131,18 cf. ACO 2.1.2, 7.6.4; Syn.W. XV,136,12. [Lex., 1344]. ",
+						rel: [" "]
+					},
+						{
+						word: " ܩܛܪܩܛܐ ",
+						def: "(n., Gr. καταρράκτης) a. “sluice; cataract”: ChrPJ 52; ChrEd. 8. [Lex., 1359].",
+						rel: ["  "]
+					},{word: " ܩܠܪܝܩܘܣ ",
+						def: "(n., Gr. κληρικός) a. “clerics, the clergy (collectively)”: ChrPJ 83; cf. JulRom 25,2 ܩܠܪ̈ܣ ܟܠܗܿ ܕܥܕܬܐ “the entire clergy of the church”; BL Or. 8606, f.141r,a.1; Syn.W. XV,135,3 ܩܠܝܪܝ̈ܩܘ ܐܟܣܢܝ̈ܐ “foreign clerics” (cf. ACO 2.1.2, Actio 7.6.13); Syn.W. LIII,272,10. [Lex., 1371].",
+						rel: [""]
+					},
+					{ 
+						word: "ܩܡܣ",
+						def: " (n., L. comes via Gr. κόμης) a. “comes; military general”: ChrPJ 61, 80; PZR I,159,8 ܩܘܡܣ; Sev. Ep.Sel. III.1, IV.6 ܩܘܡܝܣ (= Anastasius); Syn.W. XXIX,194,8 ܩܘܡܝܛܝ̈ܣܐ; CatWr 2 569a,6; ChrEd. 12.11. [Lex., 1334].",
+						rel: [""]
+
+					},
+					{
+						word: "ܩܢܕܝܠܐ",
+						def: "(n., L. candela via Gr. κανδήλη) a. “candle, torch”: ChrPJ 27, 30; Syn.W. XL,219,4. [Lex., 1379-1380]. ",
+						rel: [""]
+					},
+					{word: " ܩܢܝ̈ܢܐ ",
+						def: "(n.) a. “possessions; personal property; movable property”: ChrPJ 38, 52, 53, 79; IsaAnt Royal City 302,132; Liber Graduum 22.2; Syn.W. XV,130,27; Life of Rabbula 10 ܩܢܝ̈ܢܗܼ “all of his [Rabbula’s] possessions; Gn 4:20 P. [Lex., 1385].",
+						rel: ["  "]
+					},
+					{ 
+						word: "  ܩܣܛܐ  ",
+						def: "(n., L. sextarius via Gr. ξέστης) a. “pitcher; unit of liquid measure”: ChrPJ 87; Judges 6:19 P; Heb 9:4 P. [Lex., 1387].",
+						rel: [""]
+
+					},
+					{
+						word: " ܩܣܛܪܐ  ",
+						def: " (n., L. castra via Gr. κάστρα) “military camp, fort; fortified town, city.” a) ChrPJ 74; ܒܝܪܬܐ ܩܣܛܪܐ ChrPJ 91 [cf. Trombley and Watt 2000, 110n.514]; Chr1234 II,3,18. b) for the city of Batnae (= Syr. Serūg, mod. Suruç) ܒܛܢܢ ܩܣܛܪܐ ChrPJ 89 [cf. ODLA “Batnae”]. ܒܢܝ̈ ܩܣܛܪܐ “inhabitants of the fortified town (Ṣalaḥ)” PognInscr. 33.14. [Lex., 1387].",
+						rel: [""]
+					},
+					{
+						word: " ܩܪܝܬܐ ",
+						def: "(n.) a. “village; small town; hamlet”: ChrPJ 51, 59, 60, 68, 79, 90; JnEph LES 1 (I,6) (= Fiṭr); PZR I,4,4; PognInscr. 111.15; BL Or. 8606, f.141r,a.12-13 ܕܒܟܘܪܐ ܕܚܡܨ ܡܕܝܢܬܐ “a village in the countryside of the city Emesa”; JnEph LES 5 (I,89-90) “a populous village.” [Lex., 1410-1411].",
+						rel: [""]
+					},
+						{
+						word: " ܩܫܝܫܐ ",
+						def: "(n.) a. “priest; elder; senior”: ChrPJ 42, 83, 86, 89; ChrEd 6.14; Sharbil 95; BL Or. 8606, f.140v,b.19-20. [Lex., 1419-1420].",
+						rel: [""]
+					},	
+					{
+						word: " ܩܫܝܫܘܬܐ ",
+						def: "(n.) a. “priesthood”: ChrPJ 74. [Lex., 1420].",
+						rel: [""]
+					},
+						{
+						word: " ܚܝܠܐ ",
+						def: "(n.) a. “general; military commander”: ChrPJ 48, 58, 65, 73, 80, 88; Melkite Chronicle 7; Acts of Thomas 62; JulRom 13,22; JulRom 228,15 (= Arsacius); JulRom 101,28 (= Jovian); JulRom 85,26 ܪܒ ܚܝܠܢ ܥܠ ܐܘܚܕܢܢ “our commander for our empire”; JulRom 154,22 ܪܒ ܚܝܠܐ ܕܪܗܘܡܝ̈ܐ “the commander of the Romans.” [Lex., 1425].",
+						rel: ["  "]
+					},
+						{
+						word: " ܪܒܝܬܐ ",
+						def: "(n.) a. “manager, steward; οἰκονόμος”: ChrPJ 42, 83; JulRom 139,14 ܪܒ ܒܝܬܗ “his [Julian’s] steward (= is Aporantius)”; Mt 20:8 PCS; Syn.W. XV,130,9; Syn.W. XV,139,13 (cf. ACO 2.1.2, Actio 7.6.2, translating “οἰκονόμος”); Syn.W. LXI,60,17; Rabbula Adm. Priests 45. [Lex., 1425].",
+						rel: [""]
+					},
+						{
+						word: " ܪܗܘܡܐܝܬ ",
+						def: "(pr.n., L. Roma) “Rome (city)”: ChrPJ 58; Ms DS 10, f.72v.",
+						rel: [""]
+					},
+						{
+						word: " ܪ̈ܗܘܡܝܐ ",
+						def: "(adj.) a. “Roman, of Rome; of the Roman empire”: ChrPJ passim; IsaAnt Royal City 300,74; PZR I,154,22; Thomas of Marga Gov. 70,2, 197,7, 369,8. [Lex., 1440].",
+						rel: [""]
+					},
+						{
+						word: " ܪܘ̈ܪܒܢܐ  ",
+						def: "(n.) a. “noble person; members of the nobility; magnates”: ChrPJ 23, 24, 43, 44, 61, 93; Menander Rhetor [As I, 69]; JnEph LES 10 (I,140); JnEph LES 2 (I,24) (of Constantinople); PZR I,210,6; PZR I,225,17; PognInscr. 76.9, 12; Life of Rabbula 40, JulRom 19,8 ܕܡܕܝܢܬܐ “of the city”; Life of Rabbula 36 ܕܡܕܝܢܬܗܼ “of his [Rabbula’s] city”; JnEph LES 10 (I,141) ܕܝܕܝ̈ܥܐ “and distinguished men”; JulRom 22,17-18; JulRom 58,9 ܕܪܗܘܡܐ “of Rome”; Life of Man of God 8 ܪܘ̈ܪܒܝܢ ܐܠܗܐ “noble in the eyes of God (i.e., in spirit ܒܢܦܫܝ̈ܗܘܢ).” b. “leaders; officials”: PZR I,4,13 ܕܟܢܘܫܬܐ “of the congregation”; Life of Rabbula 46 ܪܘ̈ܪܒܢܐ ܕܡܠܟܐ ܐܚܝ̈ܕܝ ܫܘܠܛܢܐ “imperial officials who have imperium”; Aphr. Dem. 1.12 ܪܘ̈ܪܒܢܝܢ “captains” (cf. 2Kgs 1:9-16). [Lex., 1452-1453].",
+						rel: [""]
+					},
+						{
+						word: " ܫܘܠܛܢܐ ",
+						def: "(n., cf. L. imperium Gr. ἐξουσία) a. “power, jurisdiction, authority”: ChrPJ 6, 7, 8, 20, 88, 99; Cyril de Recta Fide 1; Syn.W. XLIX,249,14; Life of Rabbula 32; Mt 21:23 PC; JulRom 34,23 ܐܝܟ ܡܠܟܐ “the authority befitting an emperor”; PZR I,179,1 ܫܘܠܛܢܗܼ “his [Anastasius of Jerusalem’s] authority;” Rabbula Suppl. 1.11 ܫܘܠܛܢܗܿ “the jurisdiction [of the night] (i.e., nighttime)”; Cyril Ep. 74 (CPG 5374) ܕܟܗܢܘܬܐ “of the priesthood”; JulRom 158,17 ܫܘܠܛܢܗܼ “the authority [of Jovian]”; PZR I,206,22; JnEph LES 10 (I,147) ܫܘܠܛܢܟܘܢ “your excellency” (Babai speaking to Kawad); JulRom 74,3 ܫܘܠܛܢܟܘܢ “your jurisdiction, authority” (i.e., that of the senators in Rome); PZR I,174,16; JnEph LES 10 (I,138) šwlṭnyhwn “their [the Christian bishops’] jurisdiction”; JulRom 34,25; Eusebius EH 4.26.7 [Cureton 1855, 58] ܫܘܠܛܢܐ ܪܒܐ “great power, authority”; JulRom 152,18 ܕܡܠܟܘܬܟܘܢ “of your [Julian’s] majesty”; Life of Man of God 2 ܕܚܐܪܘܬܐ “of the nobility”; Syn.W. XV,132,18 ܥܠܡܝܐ “secular [jurisdiction, authority, power]” (cf. ACO 2.1.2, Actio 7.6.7); Syn.W. XV,132,26-27 ܕܐܦܝܣܩܘܦܐ ܕܡܕܝܢܬܐ “[the authority] of the bishop of a city” (cf. ACO 2.1.2, Actio 7.6.8); JnEph LES 8 (I,125) ܕܟܘܪܐܦܝܣܩܦܘܬܐ “[the authority] of the chorepiscopate.” b. “empire; kingdom; district; region (i.e., the geographical manifestation of power, authority, imperium, etc.”: JnEph LES 18 (I,260) ܕܐܡܕܝ̈ܐ “[the district] of Amida (lit., of the Amidenes, i.e., Mesopotamia)”; JnEph LES 4 (I,56) ܕܐܡܝܕܐ “[the district] of Amida (sic)”; PZR I,103,15 ܕܐܡܕ “the district of Amid [sic]”; Cyril de Recta Fide 2 ܕܡܠܟܘܬܐ ܕܝܗܘܕܝ̈ܐ “of the kingdom of the Jews”; Syn.W. LIV,1,19-20 ܕܣܪܘܓ “[the district] of Serug”; Syn.W. LV,6,17 ܕܚܪܢ “[the district] of Harran.” [Lex., 1528].",
+						rel: [""]
+					},
+						{
+						word: "ܫܩ̈ܠܐ",
+						def:"(n.pl.) a. “tributes; taxes; payments”: ChrPJ 18; P.Euphrates 19.vi; Aphrahat Dem. 5; 1Macc 10:38. [Lex., 1597-1598].",
+						rel: [""]
+					},
+						{
+						word: " ܬܐܛܪܘܢ ",
+						def: "(n., Gr. θέατρον) a. “theater; amphitheater”: ChrPJ 27, 30; SRL 120a.3; Acts 19:29 P. [Lex., 1618].",
+						rel: [""]
+					},
+						{
+						word: " ܬܚܘܡܐ ",
+						def: "(n.) “border; limit”: ChrPJ 10, 24, 38, 48, 50, 54, 56, 90, 97, 99, 100; JulRom 102,8; JulRom 151,23 ܕܪܗܘܡܝ̈ܐ “of the Romans”; Life of Rabbula 52 ܕܐܘܚܕܢܗܼ “of his [Rabbula’s] jurisdiction”; JnEph LES 16 (I,232) ܕܩܪܝܬܐ “of the village”; JnEph LES 7 (I,123). b. “definition; decision”: Syn.W. XV,134,22; PZR I,231,2-3 ܕܗܝܡܢܘܬܐ “definition of faith.” [Lex., 1637].",
+						rel: [""]
+					},
+						{
+						word: " ܬܫܥܝܬܐ ",
+						def: "(n.) a. “history, historical account; story; life (i.e., vita)”: ChrPJ 4, 24, 25, 86; JulRom 5,5; JulRom 80,24-25 ܕܐܘܡܪܘܣ ܚܟܝܡܐ “of Homer the sage.” [Lex., 1674].",
+						rel: [""]
+					},
+						
+	];
+
+	init = function(){
+		for(var i =0; i<dictionary.length; i++){
+		document.getElementById('word_list').innerHTML += "<li onclick = 'show(" + i + ")'>" + dictionary[i].word + "</li>";
+	}
+}
+
+init();
+
+show = function(i){
+	document.getElementById('word_text').innerHTML = dictionary[i].word;
+	document.getElementById('definition').innerHTML= dictionary[i].def;
+	
+	var list = "";
+
+	for (var j =0; j<dictionary[i].rel.length; j++){
+		list += "<li>" + dictionary[i].rel[j] + "</li>";
+		document.getElementById('related').innerHTML = list;
+	}
+}
+
+// show first elemt of dictionary when page loads
+show(0);
+
+// search functionality
+search = function(){
+	query = document.getElementById('search').value;
+
+	if (query == ""){
+		return;
+	}
+
+	found = -1; // false
+
+	for (var i =0; i<dictionary.length; i++ ){
+		if (query == dictionary[i].word){
+			found = i;
+			break;
+		} else{
+			document.getElementById('word_text').innerHTML = "Word not found.";
+			document.getElementById('definition').innerHTML = "The word you entered does not exist in this dictionary.";
+			document.getElementById('related').innerHTML = "";
+		}
+	}
+
+	if(found >= 0){
+		show(found);
+	}
+}
+
+</script>
