@@ -1,0 +1,37 @@
+.navbar-collapse.corpus{
+  margin-left: 800px;
+  margin-top: 20px;
+  }
+
+.button {
+  background-color: #6E260E;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+ 
+  transform: scale(1.05) rotate(-1deg);
+}
+
+table, th, td {
+  border-collapse: collapse;
+
+}
+
+td {
+  text-align: center;
+  height: 66px;
+
+}
